@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Skill
   - MonsterAttack
+  - MovableItem
   layers:
   - Default
   - TransparentFX
