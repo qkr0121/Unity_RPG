@@ -1,0 +1,50 @@
+{
+    "list": [
+        {
+            "hat": 1,
+            "body": 1,
+            "bag": 1,
+            "weapon": 1,
+            "items": [
+                {
+                    "id": 1,
+                    "amount": 1,
+                    "slotIndex": 1
+                },
+                {
+                    "id": 1,
+                    "amount": 1,
+                    "slotIndex": 1
+                },
+                {
+                    "id": 1,
+                    "amount": 1,
+                    "slotIndex": 1
+                }
+            ]
+        },
+        {
+            "hat": 2,
+            "body": 2,
+            "bag": 2,
+            "weapon": 2,
+            "items": [
+                {
+                    "id": 2,
+                    "amount": 2,
+                    "slotIndex": 2
+                },
+                {
+                    "id": 2,
+                    "amount": 2,
+                    "slotIndex": 2
+                },
+                {
+                    "id": 2,
+                    "amount": 2,
+                    "slotIndex": 2
+                }
+            ]
+        }
+    ]
+}

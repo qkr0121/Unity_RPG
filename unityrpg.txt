@@ -1,0 +1,65 @@
+캐릭터(몬스터, 플레이어) 공통 정보 추리기 -> 구조체로 만들기
+
+클릭 포인터 생성을 위해 resourcemanager 만들기
+
+기능 	: [캐릭터] 이동, 대쉬, 공격(근접 원거리), 스킬, 피격, 사망, 레벨업,...
+	  [스텟] 힘, 지력, 민첩, 체력, 마력
+	  [일반몬스터] 플레이어 인식, 이동, 공격, 피격, 사망, 아이템 드랍, 스폰...
+	  [보스몬스터] 일반몬스터 + 특수공격
+	  [NPC] 퀘스트, 상점, 강화, 조합...        	  
+         	  
+구성 	: 메인화면 - 직업 선택 - 게임화면 - 던전 - 상점 -  
+
+순서 : 플레이어 -> 몬스터 -> 드랍(인벤토리) -> NPC -> 보스몬스터
+
+플레이어 클릭이동 -> 대쉬 -> 공격(근접,원거리) -> 몬스터 피격 -> 몬스터 AI(이동, 스폰, 공격) -> 플레이어 피격 -> 몬스터 사망
+-> 정보를 저장할 Json파일과 manager 만들기 -> 체력바 UI -> 드랍(인벤토리) 
+
+
+
+
+마우스포인터 스프라이트, 클릭포인터파티클 변경하기, 클릭포인터 땅에만 표시되게
+원거리공격 작업하기, PlayerAnimEvent 끝까지 사용않하면 지우기
+체력바 objectpool로 변경하려면 몬스터번호가 아닌 이름으로 들어가야한다. 아니면 번호를 크게 하던가 (ex 100001,100002 등으로)
+camera.main 은 일단 이렇게 하지만 네트워크 작업이 들어가면 바꿔줘야한다.
+구르기(회피) 할 때 무적으로 만들기
+ObjectPoolManager 에서 캐싱이 뭔지 확인하고 후에 적용하기 - https://rito15.github.io/posts/unity-object-pooling/
+PlayerController가 여러개가 아니라 Controller가 여러개 사용될수 있나는 의미(monster, player 등등) 
+PlayerController 는 하나만 존재하는 것이 맞음
+List가 Json 파일로 만들어지지 않았던 이유 -> 직렬화(serializable)를 안해서
+--------------------------------------
+캐릭터 아이템
+머리 - helmet
+몸(신발,장갑,하의, 상의 포함) - material
+무기 - weapon
+망토 - bag and sacks
+-------------------------------------------------------------------------
+구르기(회피() 쿨타임 적용하기
+플레이어 사망 구현하기
+애니메이션 trasition 정리하기
+플레이어 정보 불러올때 파일 위치를 Enum으로 구분한뒤 switch로 찾기
+playermanager에서 player 이름을 변수로 받아 정보 불러오기
+몬스터도 정보 불러오기
+
+
+************ 인벤토리 작업중(movableheader)
+countable 아이템과 noncountable 아이템 구별후 이동시키기
+https://rito15.github.io/posts/unity-study-rpg-inventory/
+
+
+player 공격속도 조금 빠르게 하기 -> 애니메이션 스피드와 쿨타임 조절
+
+코드 정리 한번 하기
+
+monstercontroller 상태 변환 코루틴으로 작성해 보기 -> PlayerController도
+
+부모 클래스 charactercontroller 만들어서 hit, die 상태변화 호출하기 
+-> 죽을때 발생하는 이벤트는 Character,Player,Monster에 작성
+
+피격 슈퍼아머와 피격 이벤트 발생하는 공격 따로 조건 만들어서 Character ontriggerenter 에 추가하기
+
+공격속도에 따라 공격 애니메이션이 빨라지게 하기(최대 1 더이상 느려지지 않게)
+
+character에서 characterinfo를 player와 monster 에서 초기화하기
+
+Monster 에서 monsterNum 몬스터인포 struct에 추가하기

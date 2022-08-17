@@ -1,0 +1,23 @@
+{
+    "hat": 2,
+    "body": 2,
+    "bag": 2,
+    "weapon": 2,
+    "items": [
+        {
+            "id": 3,
+            "amount": 3,
+            "slotIndex": 3
+        },
+        {
+            "id": 3,
+            "amount": 3,
+            "slotIndex": 3
+        },
+        {
+            "id": 3,
+            "amount": 3,
+            "slotIndex": 3
+        }
+    ]
+}
