@@ -43,7 +43,7 @@ playermanager에서 player 이름을 변수로 받아 정보 불러오기
 
 
 ************ 인벤토리 작업중(movableheader)
-compartment 오브젝트 pivot 0.5, 0.5 로 변경후 수동으로 생성하기
+debug.log 부분부터 작업
 countable 아이템과 noncountable 아이템 구별후 이동시키기
 https://rito15.github.io/posts/unity-study-rpg-inventory/
 
