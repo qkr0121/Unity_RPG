@@ -23,6 +23,8 @@ public class InventoryUI : MonoBehaviour
 
     private Vector2 mouseToUICenter;
 
+    private int beginSiblingIndex;
+
     private void Start()
     {
         _Gr = UIManager.Instance.canvas.GetComponent<GraphicRaycaster>();
@@ -42,13 +44,12 @@ public class InventoryUI : MonoBehaviour
     {
         rcResult.Clear();
 
-        // 마우스 클릭시 선택한 아이템을 itemIconUI에 저장합니다.
         _Gr.Raycast(pointED, rcResult);
 
         // 빈 canvas 이면 실행하지 않습니다.
-        if (rcResult.Count == 0) return null;
-
-        return rcResult[0].gameObject.GetComponentInParent<T>();
+        if (rcResult.Count <= 1) return null;
+        
+        return rcResult[1].gameObject.GetComponent<T>();
     }
 
     private void OnPointerDown()
@@ -57,23 +58,16 @@ public class InventoryUI : MonoBehaviour
         {
             /// MovalbeItem 을 클릭했을시 UI의 중앙과 클릭한 InventorySlot 을 저장합니다.
             beginInventorySlot = GetComponentInRaycast<InventorySlotUI>();
-            Debug.Log(beginInventorySlot);
 
-            if (itemIconUI.gameObject.CompareTag("MovableItem"))
-            {
-                mouseToUICenter = pointED.position - new Vector2(itemIconUI.position.x, itemIconUI.position.y);
+            if (beginInventorySlot == null || !beginInventorySlot.hasItem) return;
 
-                for(int i=0;i<rcResult.Count;i++)
-                {
-                    if(rcResult[i].gameObject.GetComponent<InventorySlotUI>() != null)
-                    {
-                        beginInventorySlot = rcResult[i].gameObject.GetComponent<InventorySlotUI>();
-                        beginInventorySlot.transform.SetAsLastSibling();
-                        break;
-                    }
-                }
-            }
-            else itemIconUI = null;
+            itemIconUI = beginInventorySlot.item;
+
+            mouseToUICenter = pointED.position - new Vector2(itemIconUI.position.x, itemIconUI.position.y);
+
+            beginSiblingIndex = beginInventorySlot.transform.GetSiblingIndex();
+            beginInventorySlot.transform.SetAsLastSibling();
+            
         }
     }
 
@@ -91,30 +85,26 @@ public class InventoryUI : MonoBehaviour
     {
         if(Input.GetMouseButtonUp(0))
         {
-            if(itemIconUI != null)
+            if (itemIconUI != null)
             {
-                rcResult.Clear();
-                finishInventorySlot = beginInventorySlot;
+                // UI 순서를 복원합니다.
+                beginInventorySlot.transform.SetSiblingIndex(beginSiblingIndex);
 
-                _Gr.Raycast(pointED, rcResult);
+                finishInventorySlot = GetComponentInRaycast<InventorySlotUI>();
 
-                for (int i = 0; i < rcResult.Count; i++) 
-                {
-                    if (rcResult[i].gameObject.GetComponent<InventorySlotUI>() != null)
-                    {
-                        finishInventorySlot = rcResult[i].gameObject.GetComponent<InventorySlotUI>();
-                        break;
-                    }
-                }
+                if (finishInventorySlot == null) finishInventorySlot = beginInventorySlot;
 
+                // 아이템 위치를 변경합니다.
                 itemIconUI.position = finishInventorySlot.transform.position;
 
-
+                Debug.Log(beginInventorySlot.item);
+                Debug.Log(finishInventorySlot.item);
+                // 아이템을 교환합니다.
+                beginInventorySlot.SwapItem(finishInventorySlot);
             }
 
             // 초기화
             itemIconUI = null;
-            rcResult.Clear();
         }
     }
 }
