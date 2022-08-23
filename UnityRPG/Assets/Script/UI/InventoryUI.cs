@@ -48,8 +48,8 @@ public class InventoryUI : MonoBehaviour
 
         // 빈 canvas 이면 실행하지 않습니다.
         if (rcResult.Count <= 1) return null;
-        
-        return rcResult[1].gameObject.GetComponent<T>();
+
+        return rcResult[0].gameObject.GetComponent<T>();
     }
 
     private void OnPointerDown()
@@ -94,11 +94,6 @@ public class InventoryUI : MonoBehaviour
 
                 if (finishInventorySlot == null) finishInventorySlot = beginInventorySlot;
 
-                // 아이템 위치를 변경합니다.
-                itemIconUI.position = finishInventorySlot.transform.position;
-
-                Debug.Log(beginInventorySlot.item);
-                Debug.Log(finishInventorySlot.item);
                 // 아이템을 교환합니다.
                 beginInventorySlot.SwapItem(finishInventorySlot);
             }

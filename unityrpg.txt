@@ -23,10 +23,13 @@
 체력바 objectpool로 변경하려면 몬스터번호가 아닌 이름으로 들어가야한다. 아니면 번호를 크게 하던가 (ex 100001,100002 등으로)
 camera.main 은 일단 이렇게 하지만 네트워크 작업이 들어가면 바꿔줘야한다.
 구르기(회피) 할 때 무적으로 만들기
-ObjectPoolManager 에서 캐싱이 뭔지 확인하고 후에 적용하기 - https://rito15.github.io/posts/unity-object-pooling/
+ObjectPoolManager 에서 캐싱이 뭔지 확인하고 후에 적용하기 - 
+인벤토리 칸 늘리는 작업하면 인벤토리슬롯 수동 생성하기
+https://rito15.github.io/posts/unity-object-pooling/
 PlayerController가 여러개가 아니라 Controller가 여러개 사용될수 있나는 의미(monster, player 등등) 
 PlayerController 는 하나만 존재하는 것이 맞음
 List가 Json 파일로 만들어지지 않았던 이유 -> 직렬화(serializable)를 안해서
+UI에서 Raycast Target 체크 해제시 클릭 인식 안됨(graphicraycaster 등등에서)
 --------------------------------------
 캐릭터 아이템
 머리 - helmet
@@ -43,8 +46,10 @@ playermanager에서 player 이름을 변수로 받아 정보 불러오기
 
 
 ************ 인벤토리 작업중(movableheader)
-Content 오브젝트의 grid layout group 사용하지 않기
-item이 값이동이 아니라 참조 이동이어서 이동시 둘다 movableItem이 되고 한쪽이 null이 안되는거 같다. 수정하기
+합치기 부분 진행중
+scriptableobject 공부하기 -> item 정보 item.cs 로 만들기
+inventoryui 와 inventory 스크립트 구분하기 item[] 관리해야하기 때문
+아이템 클릭이동은 중앙에서 거리 계산하지 말고 바로 마우스에 중앙배치하기
 countable 아이템과 noncountable 아이템 구별후 이동시키기
 https://rito15.github.io/posts/unity-study-rpg-inventory/
 
