@@ -26,6 +26,7 @@ public class InventorySlotUI : MonoBehaviour
     private TextMeshProUGUI countText;
     private int itemCount;
 
+
     private void Start()
     {
         item = Item;
@@ -49,38 +50,45 @@ public class InventorySlotUI : MonoBehaviour
 
         // 같은 아이템이면 합칩니다.
         if (itemImage.sprite == changeSlotUI.itemImage.sprite && countableItem)
-            CombineItem(changeSlotUI);
-
-        // 변경할 slot 의 아이템을 저장합니다.
-        var changeItem = changeSlotUI.item;
-        
-        // 해당 슬롯으로 아이템 이동후 위치를 초기화합니다.
-        item.transform.SetParent(changeSlotUI.transform);
-        item.anchoredPosition = Vector3.zero;
-
-        // 교환할 slot 에 아이템이 있다면 가져옵니다.
-        if(changeItem)
         {
-            changeSlotUI.item.transform.SetParent(this.transform);
-            changeSlotUI.item.anchoredPosition = Vector3.zero;
+            CombineItem(changeSlotUI);           
+        }
+        // 아니면 교환 혹은 이동합니다.
+        else
+        {
+            // 변경할 slot 의 아이템을 저장합니다.
+            var changeItem = changeSlotUI.item;
+
+            // 해당 슬롯으로 아이템을 이동합니다.
+            item.transform.SetParent(changeSlotUI.transform);
+
+            // 교환할 slot 에 아이템이 있다면 가져옵니다.
+            if (changeItem)
+            {
+                changeSlotUI.item.transform.SetParent(this.transform);
+            }
+
+            changeSlotUI.item = item;
+            item = changeItem;
         }
 
-        changeSlotUI.item = item;
-        item = changeItem;
-
+        UpdateSlot();
+        changeSlotUI.UpdateSlot();
     }
 
     // 같은 아이템을 합칩니다.
     private void CombineItem(InventorySlotUI changeSlotUI)
     {
-        itemCount += changeSlotUI.itemCount;
+        changeSlotUI.itemCount += itemCount;
 
         // 아이템이 최대개수를 넘으면 최대개수만큼만 합칩니다.
-        if(itemCount > 99)
+        if (changeSlotUI.itemCount > 99)
         {
-            changeSlotUI.itemCount = itemCount - 99;
-            itemCount = 99;
+            itemCount = changeSlotUI.itemCount - 99;
+            changeSlotUI.itemCount = 99;
         }
+        else
+            itemCount = 0;
 
         UpdateSlot();
         changeSlotUI.UpdateSlot();
@@ -89,6 +97,14 @@ public class InventorySlotUI : MonoBehaviour
     // 슬롯정보를 갱신합니다.
     public void UpdateSlot()
     {
+        // 아이템이 0개면 삭제합니다.
+        if(itemCount == 0)
+        {
+            Destroy(item.gameObject);
+        }
+
+        item.anchoredPosition = Vector3.zero;
+
         countText.text = itemCount.ToString();
     }
 }
