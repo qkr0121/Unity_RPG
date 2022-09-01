@@ -30,6 +30,7 @@ PlayerController가 여러개가 아니라 Controller가 여러개 사용될수 있나는 의미(mons
 PlayerController 는 하나만 존재하는 것이 맞음
 List가 Json 파일로 만들어지지 않았던 이유 -> 직렬화(serializable)를 안해서
 UI에서 Raycast Target 체크 해제시 클릭 인식 안됨(graphicraycaster 등등에서)
+폴리곤에셋사이트 : syntystore
 --------------------------------------
 캐릭터 아이템
 머리 - helmet
@@ -44,6 +45,7 @@ UI에서 Raycast Target 체크 해제시 클릭 인식 안됨(graphicraycaster 등등에서)
 playermanager에서 player 이름을 변수로 받아 정보 불러오기
 몬스터도 정보 불러오기
 
+스킬 정보 struct와 scriptableobject 뭐로 해야하나
 
 ************ 인벤토리 작업중(movableheader)
 InventoryUI는 Inventory를 참조하여 Item 또는 배열을 갱신
