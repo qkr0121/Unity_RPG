@@ -57,5 +57,13 @@ public sealed class PlayerController : CharacterController
             _PlayerCharacter.skillType = SkillType.Q;
             _PlayerCharacter.stateMachine.ChangeState(_PlayerCharacter.characterState[(int)Player.State.Attack]);
         }
+        // 인벤토리활성화/비활성화
+        else if(Input.GetKeyDown(KeyCode.I))
+        {
+            if (UIManager.Instance.inventoryUI.activeSelf)
+                UIManager.Instance.inventoryUI.SetActive(false);
+            else
+                UIManager.Instance.inventoryUI.SetActive(true);
+        }
     }
 }

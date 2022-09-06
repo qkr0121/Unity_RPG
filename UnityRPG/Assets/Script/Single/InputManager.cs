@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class InputManager : ManagerClassBase<InputManager>
 {  
@@ -22,10 +23,15 @@ public class InputManager : ManagerClassBase<InputManager>
     private void Update()
     {
         // 마우스의 위치를 확인합니다.
+        Ray ray = _Camera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        if (Physics.Raycast(_Camera.ScreenPointToRay(Input.mousePosition), out hit, 100f, ~_IgnoreLayer))
+        if (Physics.Raycast(ray, out hit, 100f, ~_IgnoreLayer))
         {
-            _MousePos = hit.point;
+            if(EventSystem.current.IsPointerOverGameObject() == false)
+            {
+                Debug.Log("asdf");
+                _MousePos = hit.point;
+            }    
         }
 
     }

@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class UIManager : ManagerClassBase<UIManager>
 {
+    [Header("인벤토리")]
+    [SerializeField] private GameObject _InventoryUI;
+    public GameObject inventoryUI => _InventoryUI;
+
     private Canvas _Canvas;
     public Canvas canvas => _Canvas ??
         GameObject.Find("Canvas").GetComponent<Canvas>();
@@ -14,7 +18,7 @@ public class UIManager : ManagerClassBase<UIManager>
     public CanvasScaler cs => _Cs;
 
     // ScreenRatio
-    public float ratio;
+    public float ratio { get; private set; }
 
     // HealthBarUI 컴포넌트
     private HealthBarUI _HealthBarUI;
