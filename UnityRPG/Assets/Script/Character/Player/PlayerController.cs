@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public sealed class PlayerController : CharacterController
 {
@@ -25,7 +26,7 @@ public sealed class PlayerController : CharacterController
             _PlayerCharacter.stateMachine.ChangeState(_PlayerCharacter.characterState[(int)Character.State.Dodge]);
         }
         // 이동 (마우스 오른쪽)
-        else if (Input.GetMouseButtonDown(1))
+        else if (Input.GetMouseButtonDown(1) && !EventSystem.current.IsPointerOverGameObject())
         {
             // 클릭파티클을 재생합니다.
             _ClickParticle.transform.position = InputManager.Instance.mousePos;
@@ -33,7 +34,7 @@ public sealed class PlayerController : CharacterController
 
             _PlayerCharacter.stateMachine.ChangeState(_PlayerCharacter.characterState[(int)Character.State.Move]);
         }
-        else if(Input.GetMouseButton(1))
+        else if(Input.GetMouseButton(1) && !EventSystem.current.IsPointerOverGameObject())
         {
             _PlayerCharacter.stateMachine.ChangeState(_PlayerCharacter.characterState[(int)Character.State.Move]);
         }
