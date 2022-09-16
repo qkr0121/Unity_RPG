@@ -19,3 +19,8 @@ UnityRPG 1차 포폴까지 완료 해야할것
 시작시 파티클 재생 안되게 하기
 
 UI 에셋 - Tiny Fantasy Icons
+
+기초cs
+https://cocoon1787.tistory.com/668
+
+면접을 위한 cs 전공지식 노트
