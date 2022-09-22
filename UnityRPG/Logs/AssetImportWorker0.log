@@ -1,0 +1,377 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.4f1 (cb45f9cae8b7) revision 13321721'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ko' Physical Memory: 16281 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Administrator/Documents/Unity_RPG/UnityRPG
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50567
+Successfully changed project path to: C:/Users/Administrator/Documents/Unity_RPG/UnityRPG
+C:/Users/Administrator/Documents/Unity_RPG/UnityRPG
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 197.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.4f1 (cb45f9cae8b7)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Administrator/Documents/Unity_RPG/UnityRPG/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Vendor:   NVIDIA
+    VRAM:     5991 MB
+    Driver:   27.21.14.5751
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56088
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.090759 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 121.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.483 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3483ms)
+		BeginReloadAssembly (2487ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (667ms)
+			LoadAssemblies (2486ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (345ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (261ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (122ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (95ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.814680 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Administrator\Documents\Unity_RPG\UnityRPG\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Administrator\Documents\Unity_RPG\UnityRPG\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.933 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3934ms)
+		BeginReloadAssembly (86ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (3721ms)
+			LoadAssemblies (2060ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (572ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (1015ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (258ms)
+				ProcessInitializeOnLoadMethodAttributes (678ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3464 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (56.0 KB). Loaded Objects now: 3926.
+Memory consumption went from 132.1 MB to 132.0 MB.
+Total: 2.948700 ms (FindLiveObjects: 0.266500 ms CreateObjectMapping: 0.227200 ms MarkObjects: 2.389100 ms  DeleteObjects: 0.065000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 671.876651 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Defend.FBX
+  artifactKey: Guid(a8df761c50a595543baf64bf8c740954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Defend.FBX using Guid(a8df761c50a595543baf64bf8c740954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e49dc6c812e206c8ed1e0960fa1251') in 0.164828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.098845 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Drink Potion.FBX
+  artifactKey: Guid(902843acf199f0548aef12788fddf277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Drink Potion.FBX using Guid(902843acf199f0548aef12788fddf277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4630b09a3da9622c1782674f5aa833e9') in 0.076293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.196948 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Fly Cast Spell 01.FBX
+  artifactKey: Guid(1910d49334cf2164598471c839fd7c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Fly Cast Spell 01.FBX using Guid(1910d49334cf2164598471c839fd7c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '688d51696999847a12856713a381e969') in 0.078820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.861336 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Fly Cast Spell 02.FBX
+  artifactKey: Guid(9eb0b77e6c99c9849ad46c232097a4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Fly Cast Spell 02.FBX using Guid(9eb0b77e6c99c9849ad46c232097a4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '531ce55f3027686e0502920b0007a4ff') in 0.055560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.112070 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Cast Spell.FBX
+  artifactKey: Guid(b4ec0f5ae23b81b43b0c036be4576a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Cast Spell.FBX using Guid(b4ec0f5ae23b81b43b0c036be4576a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e3c63e15daa2ae0c8d6dda1b16a67e6') in 0.047788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.016812 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Cast Spell 02.FBX
+  artifactKey: Guid(454558ba5c6ff9c4b9c6eb3c2aba078b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Cast Spell 02.FBX using Guid(454558ba5c6ff9c4b9c6eb3c2aba078b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49645fc72803250e6e586a28f773121f') in 0.080166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.846839 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Fly Melee Left Attack 01.FBX
+  artifactKey: Guid(11e4a3d98a208c749ad831ba734153b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Fly Melee Left Attack 01.FBX using Guid(11e4a3d98a208c749ad831ba734153b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ad8a807da5b2473d38f1fe8667d1f0f') in 0.080364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.042988 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Hammering on anvil.FBX
+  artifactKey: Guid(9cfd5cb702fe22a4bb026b9657e851d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Hammering on anvil.FBX using Guid(9cfd5cb702fe22a4bb026b9657e851d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75fd6efb2f75f1694e253d53573a6c44') in 0.073175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.016609 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Left Throw.FBX
+  artifactKey: Guid(2b890fd579dc38d4dacdaad19556e84e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Left Throw.FBX using Guid(2b890fd579dc38d4dacdaad19556e84e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a1a62222ed2da5de89ca164a5a8893a') in 0.062982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.760059 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Lay Ground.FBX
+  artifactKey: Guid(943163616cee2bb4a83ebc4bda3ab56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Lay Ground.FBX using Guid(943163616cee2bb4a83ebc4bda3ab56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1bcd1ded480b0586d1322785768cf2a') in 0.049297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.450933 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Melee Right Attack 03.FBX
+  artifactKey: Guid(9066effb326206b4c951335bcebee31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Melee Right Attack 03.FBX using Guid(9066effb326206b4c951335bcebee31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09a2e8c7a81898c3481edfc11e40382c') in 0.077072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.230027 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Melee Right Attack 01.FBX
+  artifactKey: Guid(d07708743b379bd4182c685d3d1dfd96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Melee Right Attack 01.FBX using Guid(d07708743b379bd4182c685d3d1dfd96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8328046b9054ca7f91a8683a993bbf52') in 0.050178 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.036426 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Melee Right Attack 02.FBX
+  artifactKey: Guid(ce6d3e7e0555d3f4e9669bb24f791ef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Melee Right Attack 02.FBX using Guid(ce6d3e7e0555d3f4e9669bb24f791ef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '536be4505d7b2cf00a1909f57a817666') in 0.064654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 159.606498 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Projectile Right Attack 01.FBX
+  artifactKey: Guid(c8f90aeba493b0f4eba4308d4e16d380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Projectile Right Attack 01.FBX using Guid(c8f90aeba493b0f4eba4308d4e16d380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aa0632e84a5b1f1a9ee9191ade5cad5') in 0.077224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.044334 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Spear Walk With Root Motion.FBX
+  artifactKey: Guid(11a633ac457f76d4282a1fc263675955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Spear Walk With Root Motion.FBX using Guid(11a633ac457f76d4282a1fc263675955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74e626414254fed21e7c483cd2e387b6') in 0.053828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.008662 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Spear Walk.FBX
+  artifactKey: Guid(e019e415656235345a65d2aab44e9b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Spear Walk.FBX using Guid(e019e415656235345a65d2aab44e9b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08a935efb7c9e742e9bc8f005bf35a3') in 0.035597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 66.316735 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Spin Attack.FBX
+  artifactKey: Guid(c4dafddbadde4b34894c1c519097cce4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Spin Attack.FBX using Guid(c4dafddbadde4b34894c1c519097cce4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79eae236e9213abc508703ee3fbae6b9') in 0.050113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.472679 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Strafe Left With Root Motion.FBX
+  artifactKey: Guid(08ecf74fa9bcb48478564603e02ddb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Strafe Left With Root Motion.FBX using Guid(08ecf74fa9bcb48478564603e02ddb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b436c59d25a756a2151a9c33438af32') in 0.031208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.437452 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Strafe Left.FBX
+  artifactKey: Guid(2d5ed85ffa9582246b9b9962031f3247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Strafe Left.FBX using Guid(2d5ed85ffa9582246b9b9962031f3247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80fa6b01f9b3c88674ec42a47cfa4585') in 0.044782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.046031 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Strafe Right With Root Motion.FBX
+  artifactKey: Guid(04423a1e5c8b0a14c80bf1fc26061472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Strafe Right With Root Motion.FBX using Guid(04423a1e5c8b0a14c80bf1fc26061472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '281da3e800bc7565f50bf11e87601dcf') in 0.031778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.321252 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@Strafe Right.FBX
+  artifactKey: Guid(3187a810956d56e4493e40403124278a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@Strafe Right.FBX using Guid(3187a810956d56e4493e40403124278a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e2a5b46d7f88d78e1e7263ad781cde5') in 0.031402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.969249 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@TH Sword Melee Attack 01.FBX
+  artifactKey: Guid(f38877bfaa5c8374f8705454b410faf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@TH Sword Melee Attack 01.FBX using Guid(f38877bfaa5c8374f8705454b410faf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a208a4a639e198359448470065076f') in 0.071766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.517651 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@TH Sword Melee Attack 02.FBX
+  artifactKey: Guid(6a34de39c95ea2940821bf7ef863cd9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@TH Sword Melee Attack 02.FBX using Guid(6a34de39c95ea2940821bf7ef863cd9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1458281eaecf5cb981be83d798441c0') in 0.048359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.890840 seconds.
+  path: Assets/Little Heroes Mega Pack/Animations/Base@TH Sword Run With Root Motion.FBX
+  artifactKey: Guid(3ba8cb22cedde5e429872f9d0435764e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Little Heroes Mega Pack/Animations/Base@TH Sword Run With Root Motion.FBX using Guid(3ba8cb22cedde5e429872f9d0435764e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24851fb96f70b394d56382c386372b4d') in 0.043566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 740.858922 seconds.
+  path: Assets/Script/UI/SkillBarUI.cs
+  artifactKey: Guid(529657b5e08cb53418466171611760f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/UI/SkillBarUI.cs using Guid(529657b5e08cb53418466171611760f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07528854f99eec3f66ed7cc3c9a21e39') in 0.008219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 255.742336 seconds.
+  path: Assets/Script/UI/SkillBarUI.cs
+  artifactKey: Guid(529657b5e08cb53418466171611760f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/UI/SkillBarUI.cs using Guid(529657b5e08cb53418466171611760f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7d07ad28292f86cfbaa2a3059267780') in 0.001499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 982.005322 seconds.
+  path: Assets/Script/UI/SkillBarUI.cs
+  artifactKey: Guid(529657b5e08cb53418466171611760f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/UI/SkillBarUI.cs using Guid(529657b5e08cb53418466171611760f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e03f7fc1a9b737649e25d34478e274dd') in 0.001441 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003086 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Administrator\Documents\Unity_RPG\UnityRPG\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Administrator\Documents\Unity_RPG\UnityRPG\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.778 seconds
+Domain Reload Profiling:
+	ReloadAssembly (779ms)
+		BeginReloadAssembly (112ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (592ms)
+			LoadAssemblies (60ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (219ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (244ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (156ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3440 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 3940.
+Memory consumption went from 147.6 MB to 147.6 MB.
+Total: 2.587800 ms (FindLiveObjects: 0.231800 ms CreateObjectMapping: 0.132100 ms MarkObjects: 2.211900 ms  DeleteObjects: 0.011400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

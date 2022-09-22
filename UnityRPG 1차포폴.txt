@@ -24,3 +24,5 @@ UI 에셋 - Tiny Fantasy Icons
 https://cocoon1787.tistory.com/668
 
 면접을 위한 cs 전공지식 노트
+
+https://velog.io/@yjy1175/%EB%A9%B4%EC%A0%91%EA%B8%B0%EC%88%A0-C%EA%B3%BC-Unity%EA%B4%80%EB%A0%A8-%EC%A7%88%EB%AC%B8-%EB%A6%AC%EC%8A%A4%ED%8A%B81
