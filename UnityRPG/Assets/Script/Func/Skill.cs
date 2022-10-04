@@ -27,17 +27,25 @@ public abstract class Skill : MonoBehaviour
     public void SkillStart()
     {
         skillInfo.useable = false;
+        skillInfo.leftCoolTime = skillInfo.skillCool;
 
         SkillEffect();
 
-        StartCoroutine(CoolDown());
+        StartCoroutine(CoolDown());       
     }
 
     IEnumerator CoolDown()
     {
-        yield return new WaitForSecondsRealtime(skillInfo.skillCool);
 
-        skillInfo.useable = true;
+        yield return null;
+
+        skillInfo.leftCoolTime -= Time.deltaTime;
+
+        if (skillInfo.leftCoolTime > 0)
+            StartCoroutine(CoolDown());
+        else
+            skillInfo.useable = true;
+
     }
 
     // 스킬 사용효과

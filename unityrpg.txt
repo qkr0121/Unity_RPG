@@ -49,8 +49,6 @@ playermanager에서 player 이름을 변수로 받아 정보 불러오기
 
 스킬 정보 struct와 scriptableobject 뭐로 해야하나
 
-Skill script 에 각 스킬 sprite(Image) 와 기타 필요한것 추가하기
-
 ************ 인벤토리 작업중(movableheader)
 UIManager에서 inventoryui 직렬화를 load로 불러오기
 InventoryUI는 Inventory를 참조하여 Item 또는 배열을 갱신

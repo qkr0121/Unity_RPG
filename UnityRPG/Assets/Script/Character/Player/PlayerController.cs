@@ -11,11 +11,14 @@ public sealed class PlayerController : CharacterController
     // 클릭파티클 시스템
     private ParticleSystem _ClickParticle;
 
+    private SkillBarUI skillBarUI;
+
     private void Start()
     {
         _PlayerCharacter = GetComponentInChildren<Player>();
         _ClickParticle = (Instantiate(Resources.Load("Particle/MovePoint"), transform) as GameObject).GetComponent<ParticleSystem>();
         _PlayerCharacter.Setup();
+        skillBarUI = UIManager.Instance.skillBarUI;
     }
 
     private void Update()
@@ -57,6 +60,7 @@ public sealed class PlayerController : CharacterController
 
             _PlayerCharacter.skillType = SkillType.Q;
             _PlayerCharacter.stateMachine.ChangeState(_PlayerCharacter.characterState[(int)Player.State.Attack]);
+            skillBarUI.CoolDown((int)SkillType.Q);
         }
         // 인벤토리활성화/비활성화
         else if(Input.GetKeyDown(KeyCode.I))

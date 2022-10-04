@@ -9,6 +9,10 @@ public class UIManager : ManagerClassBase<UIManager>
     [SerializeField] private GameObject _InventoryUI;
     public GameObject inventoryUI => _InventoryUI;
 
+    [Header("½ºÅ³¼ÂUI")]
+    [SerializeField] private SkillBarUI _SkillBarUI;
+    public SkillBarUI skillBarUI => _SkillBarUI;
+
     private Canvas _Canvas;
     public Canvas canvas => _Canvas ??
         GameObject.Find("Canvas").GetComponent<Canvas>();
