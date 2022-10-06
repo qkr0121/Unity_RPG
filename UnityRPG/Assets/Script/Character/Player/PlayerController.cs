@@ -62,6 +62,39 @@ public sealed class PlayerController : CharacterController
             _PlayerCharacter.stateMachine.ChangeState(_PlayerCharacter.characterState[(int)Player.State.Attack]);
             skillBarUI.CoolDown((int)SkillType.Q);
         }
+        else if (Input.GetKeyDown(KeyCode.W))
+        {
+            // 저장된 스킬이 없거나 쿨타임이면 스킬을 사용하지 않습니다.
+            if (_PlayerCharacter.characterInfo.skills[(int)SkillType.W] == null ||
+                !_PlayerCharacter.characterInfo.skills[(int)SkillType.W].skillInfo.useable) return;
+
+            _PlayerCharacter.skillType = SkillType.W;
+            _PlayerCharacter.stateMachine.ChangeState(_PlayerCharacter.characterState[(int)Player.State.Attack]);
+            skillBarUI.CoolDown((int)SkillType.W);
+        }
+        else if (Input.GetKeyDown(KeyCode.E))
+        {
+            // 저장된 스킬이 없거나 쿨타임이면 스킬을 사용하지 않습니다.
+            if (_PlayerCharacter.characterInfo.skills[(int)SkillType.E] == null ||
+                !_PlayerCharacter.characterInfo.skills[(int)SkillType.E].skillInfo.useable) return;
+
+            _PlayerCharacter.skillType = SkillType.E;
+            _PlayerCharacter.stateMachine.ChangeState(_PlayerCharacter.characterState[(int)Player.State.Attack]);
+            skillBarUI.CoolDown((int)SkillType.E);
+        }
+        else if (Input.GetKeyDown(KeyCode.R))
+        {
+            // 저장된 스킬이 없거나 쿨타임이면 스킬을 사용하지 않습니다.
+            if (_PlayerCharacter.characterInfo.skills[(int)SkillType.R] == null ||
+                !_PlayerCharacter.characterInfo.skills[(int)SkillType.R].skillInfo.useable) return;
+
+            // 플레이어의 체력이 최대체력이면 사용하지 않습니다.
+            if (_PlayerCharacter.characterInfo.health == 100) return;
+
+            _PlayerCharacter.skillType = SkillType.R;
+            _PlayerCharacter.stateMachine.ChangeState(_PlayerCharacter.characterState[(int)Player.State.Attack]);
+            skillBarUI.CoolDown((int)SkillType.R);
+        }
         // 인벤토리활성화/비활성화
         else if(Input.GetKeyDown(KeyCode.I))
         {

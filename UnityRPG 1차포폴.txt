@@ -1,9 +1,13 @@
 UnityRPG 1차 포폴까지 완료 해야할것
 
-스킬에 파티클 넣기
 스킬(W,E) 구현 -> PlayerController에서 묶어보기
-스킬 UI(W,E 진행하기)
+아이템사용은 스킬이 아닌 다른방식으로 구현하기
 
+오디오와 파티클 [serializefield] 말고 skill 에서 getcomponent 로 중복 없애기
+virtual로 setcollider, effect, finish 중복 없애기
+
+-> 파티클이 캐릭터의 방향에 따라 움직임 -> 월드포지션으로 따로 생성하고 제거하기
+, powerup스펠 데미지 증가설정, 스킬과 기본공격 데미지 다르게 설정
 
 플레이어 리스폰
 

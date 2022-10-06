@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class MeleeAttack : Skill
 {
-    [SerializeField] private ParticleSystem _particleSystem;
-
     private void Start()
     {
         skillInfo = new SkillInfo(
@@ -35,6 +33,8 @@ public class MeleeAttack : Skill
 
         // 파티클 재생
         _particleSystem.Play();
+        // 오디오 재생
+        _audioSource.Play();
         // 공격 범위를 나타내는 collider 를 활성화합니다.
         _AttackRange.enabled = true;
     }

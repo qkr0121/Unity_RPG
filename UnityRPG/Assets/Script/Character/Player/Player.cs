@@ -9,6 +9,9 @@ public class Player : Character
     [Header("기본공격과 스킬")]
     [SerializeField] private GameObject _AutoAttack;
     [SerializeField] private GameObject Q_Skill;
+    [SerializeField] private GameObject W_Skill;
+    [SerializeField] private GameObject E_Skill;
+    [SerializeField] private GameObject R_Skill;
 
     // 플레이어 스텟
     public PlayerStats stats;
@@ -19,9 +22,12 @@ public class Player : Character
 
         characterInfo = new CharacterInfo(this);
 
-        characterInfo.skills = new Skill[2];
+        characterInfo.skills = new Skill[5];
         characterInfo.skills[(int)SkillType.A] = _AutoAttack.GetComponentInChildren<Skill>();
         characterInfo.skills[(int)SkillType.Q] = Q_Skill.GetComponentInChildren<Skill>();
+        characterInfo.skills[(int)SkillType.W] = W_Skill.GetComponentInChildren<Skill>();
+        characterInfo.skills[(int)SkillType.E] = E_Skill.GetComponentInChildren<Skill>();
+        characterInfo.skills[(int)SkillType.R] = R_Skill.GetComponentInChildren<Skill>();
 
         _CharacterState = new State<Character>[6];
         _CharacterState[(int)State.Idle] = new CharacterState.Idle();
