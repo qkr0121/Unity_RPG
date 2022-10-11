@@ -1,6 +1,5 @@
 UnityRPG 1차 포폴까지 완료 해야할것
 
-스킬(W,E) 구현 -> PlayerController에서 묶어보기
 아이템사용은 스킬이 아닌 다른방식으로 구현하기
 
 오디오와 파티클 [serializefield] 말고 skill 에서 getcomponent 로 중복 없애기
